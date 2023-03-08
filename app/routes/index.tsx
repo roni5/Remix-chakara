@@ -1,32 +1,22 @@
-export default function Index() {
+import { Box, Container, Heading, Text } from "@chakra-ui/react";
+
+const Index = () => {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
-      <h1>Welcome to Remix</h1>
-      <ul>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/blog"
-            rel="noreferrer"
-          >
-            15m Quickstart Blog Tutorial
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/jokes"
-            rel="noreferrer"
-          >
-            Deep Dive Jokes App Tutorial
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://remix.run/docs" rel="noreferrer">
-            Remix Docs
-          </a>
-        </li>
-      </ul>
-    </div>
+    <Container>
+      <Box bg="blue" w="100%" p={4} color="white">
+        Hello World Roni!
+      </Box>
+      <Heading my="30px" p="10px">
+        UI Comp
+      </Heading>
+      <Text ml="-1.5" color="blackAlpha.600">
+        {" "}
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, omnis
+        alias corrupti iste non minus nemo quam sed iure fugiat expedita itaque
+        vitae delectus. Error ipsum qui dolor fugit accusamus.
+      </Text>
+    </Container>
   );
-}
+};
+
+export default Index;
